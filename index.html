@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>JUNG EUNJI — Digital Designer &amp; Creative Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<canvas id="webgl"></canvas>
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"><span></span></div>
+
+<header id="siteHeader">
+  <div class="brand">[ JUNG EUNJI ]</div>
+  <nav class="main-nav">
+    <a href="#work" class="nav-link" data-close-menu>WORK</a>
+    <a href="#about" class="nav-link" data-close-menu>ABOUT</a>
+    <a href="#contact" class="nav-link" data-close-menu>CONTACT</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="fs-menu" id="fsMenu">
+  <a href="#work" data-close-menu>Work</a>
+  <a href="#about" data-close-menu>About</a>
+  <a href="#contact" data-close-menu>Contact</a>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-hi mono">[ JUNG EUNJI ]</div>
+      <h1>
+        UX/UI<br><span class="amp">&amp;</span><br>WEB<br>DESIGNER
+      </h1>
+      <p class="hero-statement reveal in">사용자를 관찰하고 이해하는 시선으로, 화면 안의 경험을 세심하게 설계합니다.</p>
+      <div class="hero-focus reveal in">
+        <span>UX/UI DESIGN</span><span>WEB DESIGN</span><span>VISUAL DESIGN</span>
+      </div>
+      <div class="hero-cta reveal in">
+        <a href="#work" class="cta-btn magnetic" data-cursor="open">VIEW WORK <span>→</span></a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </div>
+      <div class="hero-meta">
+        FEATURED — MELO<br>PORTFOLIO — 2026 · BASED IN KOREA
+      </div>
+    </div>
+    <div class="hero-sub"><span>SCROLL TO EXPLORE</span><span class="arrow">↓</span></div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <h2>
+      <span class="reveal-line"><span>I CREATE</span></span>
+      <span class="reveal-line"><span>DIGITAL</span></span>
+      <span class="reveal-line"><span>EXPERIENCES</span></span>
+      <span class="reveal-line"><span>THAT MOVE.</span></span>
+    </h2>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div style="width:100%;">
+      <div class="about-grid">
+        <div>
+          <div class="about-frame">
+            <img src="images/img01.jpg" alt="정은지 포트레이트" />
+          </div>
+        </div>
+        <div>
+          <div class="sec-head reveal"><span class="sec-num mono">01</span><span class="sec-label">ABOUT</span></div>
+          <div class="about-copy reveal">
+            <p>사용자 중심으로 생각하고, UI/UX와 인터랙티브 경험을 디자인합니다.</p>
+          </div>
+          <div class="about-info reveal">
+            <div class="info-item"><div class="k mono">NAME</div><div class="v">JUNG EUNJI</div></div>
+            <div class="info-item"><div class="k mono">ROLE</div><div class="v">UI/UX DESIGNER</div></div>
+            <div class="info-item"><div class="k mono">LOCATION</div><div class="v">KOREA</div></div>
+            <div class="info-item"><div class="k mono">INTEREST</div><div class="v">WEB / 3D / BRANDING</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-extra reveal">
+        <div class="about-block" style="margin-top:0;">
+          <div class="k mono">DESIGN PHILOSOPHY</div>
+          <p class="about-block-text">작은 오차 하나가 완성도를 좌우한다는 것을 현장에서 배웠습니다. 그 정확함과 사용자를 관찰하는 습관을 바탕으로, 문제를 발견하고 명확한 구조로 풀어내는 디자인을 지향합니다.</p>
+        </div>
+        <div class="about-block" style="margin-top:0;">
+          <div class="k mono">TOOLS</div>
+          <div class="cert-list">
+            <span>FIGMA</span>
+            <span>PHOTOSHOP</span>
+            <span>ILLUSTRATOR</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
+        <div class="about-block" style="margin-top:0;">
+          <div class="k mono">EDUCATION</div>
+          <div class="about-info" style="margin-top:0; grid-template-columns:1fr; gap:18px;">
+            <div class="info-item"><div class="k mono">SCHOOL</div><div class="v">국제직업전문학교</div></div>
+            <div class="info-item"><div class="k mono">COURSE</div><div class="v">프론트엔드 개발 과정</div></div>
+            <div class="info-item"><div class="k mono">PERIOD</div><div class="v">2025.12 - 2026.07</div></div>
+          </div>
+        </div>
+        <div class="about-block" style="margin-top:0;">
+          <div class="k mono">CERTIFICATIONS</div>
+          <div class="cert-list">
+            <span>컴퓨터그래픽기능사</span>
+            <span>GTQ 일러스트 1급</span>
+            <span>GTQ 포토샵 1급</span>
+            <span>JLPT N3</span>
+            <span>ITQ 엑셀</span>
+            <span>ITQ 한글</span>
+            <span>ITQ 파워포인트</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:56px;">
+        <a href="#" id="resumeLink" class="cta-btn" data-cursor="open">VIEW RESUME <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORKS -->
+  <section class="works" id="work">
+    <div class="sec-head reveal"><span class="sec-num mono">02</span><span class="sec-label">SELECTED WORKS</span></div>
+    <div id="projectList"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <div class="sec-head reveal"><span class="sec-num mono">03</span><span class="sec-label">SKILLS</span></div>
+    <div class="skill-list" id="skillList"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="reveal">LET'S<br>CREATE<br>SOMETHING<br>NEW.</h2>
+    <div class="contact-rows reveal">
+      <div class="c-item"><div class="k mono">EMAIL</div><a class="v" href="mailto:ppang1237@gmail.com">PPANG1237@GMAIL.COM</a></div>
+      <div class="c-item"><div class="k mono">BEHANCE</div><a class="v" href="#">JUNGEUNJI</a></div>
+    </div>
+    <a href="mailto:ppang1237@gmail.com" class="cta-btn magnetic reveal" data-cursor="open">GET IN TOUCH <span>→</span></a>
+  </section>
+
+</main>
+
+<footer>
+  <div>© 2026 JUNG EUNJI</div>
+  <div class="footer-right">KOREA<br>DIGITAL DESIGNER</div>
+</footer>
+
+<a href="#top" class="back-top" id="backTop">BACK TO TOP <span>↑</span></a>
+
+<!-- PROJECT DETAIL OVERLAY -->
+<div class="detail" id="detailPanel">
+  <button class="detail-back mono" id="detailBack" data-cursor="open">← BACK TO WORK</button>
+  <button class="detail-close" id="detailClose" data-cursor="open">✕</button>
+  <div class="detail-inner" id="detailContent"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
